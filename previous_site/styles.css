@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  opacity: 1;
+}
+.loader>div{
+  height: fit-content;
+  width: fit-content;
+  /* border: 3px solid #3f3d56;
+  border-top-color: #ff6c4f; */
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* border-radius: 50%; */
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  opacity: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  background-color: #d5d6dd;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  line-height: 1.4;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: #3f3d56;
+  color: #ff6c4f;
+}
+
+.cardtitleabout {
+  font-size: 200%;
+}
+
+.cardtitlecontact {
+  font-size: 200%;
+  margin-bottom: 0px;
+}
+
+.cardsubtitlecontact {
+  margin-top: 10px;
+  color: #949494;
+}
+
+.navbar {
+  padding: 0px;
+  text-align: center;
+  margin: 20px;
+}
+
+.navul {
+  list-style-type: none;
+}
+
+.navli {
+  display: inline;
+}
+
+.nostyle {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul.navul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 400%;
+  margin-top: 20px;
+}
+
+.nava {
+   text-decoration: none;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-color: #ff6c4f;
+   border-radius: 0;
+   margin-left: 5px;
+   color: #3f3d56;
+   font-size: 150%;
+}
+
+.lefta {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin-left: 0;
+}
+
+.righta {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.readMoreDiv {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.readMoreButton {
+  display: inline-block;
+  max-width: 30%;
+  min-width: 200px;
+  border-radius: 4px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #3f3d56;
+  color: #eeeeee;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+ width: 100%; /* Full width */
+ padding: 12px; /* Some padding */
+ border: 1px solid #ccc; /* Gray border */
+ border-radius: 4px; /* Rounded borders */
+ box-sizing: border-box; /* Make sure that padding and width stays in place */
+ margin-top: 6px; /* Add a top margin */
+ margin-bottom: 30px; /* Bottom margin */
+ resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  font-size: 100%;
+ padding: 12px 20px;
+ border: none;
+ cursor: pointer;
+ background-color: #ff6c4f;
+ color: #3f3d56;
+}
+
+/* When moving the mouse over the submit button*/
+input[type=submit]:hover {
+ background-color: #3f3d56;
+ color: #f2f2f2;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.sherbert {
+  color: #ff6c4f;
+}
+
+.postDate {
+  color: #949494;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 30px;
+}
+
+.fullcolumn {
+  float: left;
+  width: 100%;
+}
+
+/* Card image */
+.cardimg {
+  max-width: 640px;
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.cardimgabout {
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socialicons {
+  max-width: 90px;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Add a card effect for articles */
+.card {
+  max-width: inherit;
+  background-color: #f3f3f6;
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 120%;
+}
+
+.cardtitle {
+  margin-bottom: 0px;
+}
+
+.rightcard {
+  background-color: #f3f3f6;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 120%;
+}
+
+.center {
+  text-align: center;
+}
+
+.headshot {
+  max-height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 100%;
+  max-width: 100%
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #3f3d56;
+  margin-top: 30px;
+  color: #ff6c4f;
+  /* font-size: .6em; */
+  font-size: 70%;
+  width: 75%;
+}
+
+.centersmaller {
+  text-align: center;
+  font-size: 85%;
+}
+
+.starthidden {
+  display: none;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 400%;
+  }
+
+  .footer {
+    width: 100% !important;
+  }
+
+  .nava {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 130%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .navbar {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  h1 {
+    font-size: 300%;
+  }
+
+  .cardimg {
+    padding: 0px;
+    border-radius: 4px;
+  }
+  
+  .cardimgabout {
+    padding: 0px;
+  }
+
+  .card {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  p {
+      
+    font-size: 90%;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .nava {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 110%;
+  }
+
+  .socialicons {
+    max-width: 75px;
+  }
+  
+  .cardimgabout {
+  max-width: 200px;
+  padding: 0px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  h1 {
+    font-size: 220%;
+  }
+  
+  p {
+      
+    font-size: 80%;
+  }
+
+  .nava {
+    font-size: 90%;
+  }
+  
+  .cardimgabout {
+  max-width: 150px;
+  }
+}
